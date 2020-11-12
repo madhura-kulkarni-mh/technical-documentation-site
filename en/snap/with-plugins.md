@@ -18,8 +18,7 @@ Sign up for a Midtrans Merchant Administration Portal (MAP) account, to get your
 Retrieve API Keys for *Sandbox* environment that will be used for this guide.
 </div>
 
-?>**Note:**
-Follow the [preparation section](#preparation) to retrieve *Client Key* and *Server Key*, before proceeding to the section given below.
+?>***Note***: Follow the [preparation section](#preparation) to retrieve *Client Key* and *Server Key*, before proceeding to the section given below.
 
 #### CMS Plugins and Extensions Supported by Midtrans
 A list of Content Management System (CMS) plugins and extensions, supported by Midtrans, is given below.
@@ -70,9 +69,9 @@ Step-by-step guide to install Snap integration plugins to your CMS of choice, is
 
 <hr>
 
-Midtrans ❤️ WooCommerce! This plugin allows secure online payment on your WooCommerce store, without ever needing your customer to leave your WooCommerce store! It has a beautiful built-in responsive payment interface . Midtrans makes payments simple for you and your customers. It supports various online payment channel. Midtrans support WooCommerce v2 and v3.
+Midtrans ❤️ WooCommerce! This plugin allows secure online payment on your WooCommerce store, without ever needing your customer to leave your WooCommerce store! It has a beautiful built-in responsive payment interface. Midtrans strives to make payments simple for you and your customers. It supports various online payment channels. Midtrans supports WooCommerce v2 and v3.
 
-Midtrans WooCommerce plugins are also available on [WordPress plugins store](https://wordpress.org/plugins/midtrans-woocommerce/). If you cannot find it listed there, you can always download and install it manually. For more details, refer to [Manual Installation](#b-manual-installation).
+Midtrans WooCommerce plugin is also available on [WordPress plugin store](https://wordpress.org/plugins/midtrans-woocommerce/). If you cannot find it listed there, you can always download and install it manually. For more details, refer to [Manual Installation](#manual-installation).
 
 #### Requirements
 Some of the requirements to continue with the integration process, are listed below.
@@ -82,35 +81,35 @@ Some of the requirements to continue with the integration process, are listed be
 * MySQL version v5.0 or later
 * PHP CURL enabled server/host
 
-#### Midtrans WooCommerce Plugin Installation
-Select **any one** of the following installation options given below.
+#### Installing Midtrans WooCommerce Plugin
+Select **any one** of the installation options given below.
 
-**Simple Installation**
+#### **Simple Installation**
 
 To install Midtrans-WooCommerce plugin, follow the steps given below.
   1. Login to your WordPress administration panel.
   2. Go to **Plugins** menu.
   3. Click **add new**.
   4. Search for **Midtrans-WooCommerce plugin**.
-  5. Click **Install Now** and follow on screen instructions.
-  6. Proceed to [WooCommerce Plugin Configuration Process](#woocommerce-plugin-configuration-process).
+  5. Click **Install Now** and follow on-screen instructions.
+  6. Proceed to [Configuring Midtrans WooCommerce Plugin](#configuring-midtrans-woocommerce-plugin).
 
-If you are unable to install, proceed to [Manual Installation](#b-manual-installation). 
+If you are unable to install, proceed to [Manual Installation](#manual-installation).
 
-**Manual Installation**
+#### **Manual Installation**
 
 To install Midtrans-WooCommerce plugin manually, follow the steps given below.
    1. Download the plugin from [Zip](https://github.com/veritrans/SNAP-Woocommerce/archive/master.zip).
    2. Extract the plugin, then rename the modules folder as **midtrans-woocommerce**.
    3. Upload the unzipped plugin folder to your WordPress installation's `./wp-content/plugins/` directory.
-   4. **Install and activate** the plugin from plugins menu within the WordPress admin panel.
+   4. **Install and activate** the plugin from plugins menu within the WordPress administration panel.
    5. Proceed to Configuration Process.
 
-#### Midtrans WooCommerce Plugin Configuration
+#### Configuring Midtrans WooCommerce Plugin
 To configure WooCommerce plugin, follow the steps given below.
-1. Go to **WooCommerce > Settings > Payments > Midtrans** menu. Enter the following fields for configuring WooCommerce Plugin.
-2. Enter **Title** text box with the text button that you want to display to the customer.
-3. Select **Environment** from dropdown . `Sandbox` for testing transaction and `Production` for real transaction.
+1. Go to **WooCommerce > Settings > Payments > Midtrans** menu.
+2. Enter **Title**. This text appears on the button displayed to the customer.
+3. Select **Environment** from dropdown. `Sandbox` for testing transaction and `Production` for real transaction.
 4. Enter **Merchant ID**.
 5. Enter **Client Key**.
 6. Enter **Server key**.
@@ -120,7 +119,8 @@ To configure WooCommerce plugin, follow the steps given below.
 
 ![WooCommerece Install](./../../asset/image/WooCommerce-install.gif)
 
-#### WooCommerce Plugin Notification Configuration
+
+#### Configuring WooCommerce Plugin Notification
 To configure the WooCommerce Plugin Notification URL, follow the steps given below.
 1. Login to your MAP account.
 2. Select the **Environment** from drop-down list.
@@ -132,8 +132,8 @@ To configure the WooCommerce Plugin Notification URL, follow the steps given bel
 7. Enter **Unfinish Redirect URL**.
 8. Click **Update**.
    A confirmation message is displayed.
-
    ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
+
 
    WooCommerce Plugin Notification is configured.
 
@@ -146,9 +146,7 @@ To configure the WooCommerce Plugin Notification URL, follow the steps given bel
 | 3 | Unfinish Redirect URL | [your-site-url]/?wc-api=WC_Gateway_Midtrans |
 | 4 | Error Redirect URL | [your-site-url]/?wc-api=WC_Gateway_Midtrans |
 
-?>***Note***:
-
-WordPress is installed in `your-site-url` . It can be the domain root directory such as `https://myshop.com` or `https://shop.myshop.com`or within a sub directory such as`https://myshop.com/wordpress/`.<br>Make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration. Open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
+?>***Note***: WordPress is installed in `your-site-url`. It can be the domain root directory such as `https://myshop.com` or `https://shop.myshop.com`or within a sub directory such as `https://myshop.com/wordpress/`.<br>Please make sure to input **http://** or **https://** when filling Notification URL and Redirect URL, based on your web-server configuration.
 
 <details>
 <summary>
@@ -157,7 +155,8 @@ WordPress is installed in `your-site-url` . It can be the domain root directory 
 </summary>
 
 <article>
-1. Perform successful transaction on your online store by entering the following card details given below
+1. Perform successful transaction on your online store by entering the card details given below.
+
 
 | Name        | Value               |
 | :---------- | :------------------ |
@@ -183,7 +182,7 @@ Customer email notification| Notification not received. | Check Email Notificati
 </article>
 </details>
 
-For more detailed and configurations, refer to [Midtrans WooCommerce wiki documentation](https://github.com/veritrans/SNAP-Woocommerce/wiki).
+For more details and configurations, refer to [Midtrans WooCommerce wiki documentation](https://github.com/veritrans/SNAP-Woocommerce/wiki).
 <hr><br><br>
 
 ### Magento
@@ -191,66 +190,62 @@ For more detailed and configurations, refer to [Midtrans WooCommerce wiki docume
 
 Midtrans ❤️ Magento! Midtrans takes customer experience (UX) seriously and tries to make payments simple for you and the customers. With this plugin you can make your Magento store using Midtrans payment. This extension also available on [Magento Marketplace](https://marketplace.magento.com/midtrans-snap.html).
 
-?>***Note***:This section explains the installation and the configuration for Magento 2. For Magento 1, please refer to [Snap Plugin for E-Commerce CMS](/en/technical-reference/library-plugin.md#snap-plugin-for-e-commerce-cms)
+?>***Note***: This section explains the installation and the configuration for Magento 2. For Magento 1, please refer to [Snap Plugin for E-Commerce CMS](/en/technical-reference/library-plugin.md#snap-plugin-for-e-commerce-cms)
 
 #### Requirements
 Some of the requirements to continue with the integration process, are listed below.
 * An online store with Magento infrastructure. This plugin is tested with **Magento v2.3.4**.
 * PHP v5.6 or later.
 * MySQL v5.7 or later.
-* Midtrans plugin for Magento; For Magento v2.x [ [Github](https://github.com/Midtrans/Midtrans-Magento2) | [Zip](https://github.com/Midtrans/Midtrans-Magento2/archive/master.zip) ] , For Magento v1.9 [ [Github](https://github.com/veritrans/SNAP-Magento) | [Zip](https://github.com/veritrans/SNAP-Magento/archive/master.zip) ]
+* Midtrans plugin for Magento; For Magento v2.x [[Github](https://github.com/Midtrans/Midtrans-Magento2)|[Zip](https://github.com/Midtrans/Midtrans-Magento2/archive/master.zip)] , For Magento v1.9 [[Github](https://github.com/veritrans/SNAP-Magento)|[Zip](https://github.com/veritrans/SNAP-Magento/archive/master.zip)]
 *   This plugin supports Magento2 version 2.1.0, 2.2.0, 2.3.4 and higher.
 
 #### Installation
 
-To install Magento plugins, select **any one** of the following installation options given below.
+To install Magento plugins, select **any one** of the installation options given below.
 
 #### Installing Midtrans Snap plugins through Magento marketplace
-You can install Midtrans Snap plugins through Magento Marketplace. Please, visit Midtrans on [Magento Marketplace](https://marketplace.magento.com/midtrans-snap.html) and follow step-by-step installation instructions from the [Official Magento extension docs](https://docs.magento.com/user-guide/system/web-setup-extension-manager.html).
+You can install Midtrans Snap plugins through Magento Marketplace. Please visit Midtrans on [Magento Marketplace](https://marketplace.magento.com/midtrans-snap.html) and follow step-by-step installation instructions from the [Official Magento extension docs](https://docs.magento.com/user-guide/system/web-setup-extension-manager.html).
 
 #### Installing Midtrans Snap plugins through Composer
-Before you begin to install through the composer, you need Magento marketplace account and make sure that you have installed Composer. In your terminal, go to the Magento folder and run the following commands:
+Install Composer and create Magento Marketplace account before installing Midtrans Snap plugins through Composer.
 
 
-To install Midtrans Snap plugins trough Composer, follow the steps given below.
-
-On your terminal, go to the Magento folder and run the following commands.
-
+On your terminal, go to the Magento folder and run the commands given below.
 1. Install the plugins: `composer require midtrans/snap`.
 2. Enable the plugin: `bin/magento module:enable Midtrans_Snap`.
 3. Execute upgrade script : `bin/magento setup:upgrade`.
 4. Flush cache storage : `bin/magento cache:flush`.
-5. Login to your Magento Admin Panel.
-6. Proceed to [Plugins Configurations](#magento-2-plugin-configuration) section.
+5. Login to your Magento administration Panel.
+6. Proceed to [Configuring Magento 2 Plugin](#configuring-magento-2-plugin) section.
 
 #### Installing Midtrans Snap plugins from GitHub project
 To customize Midtrans Magento plugins to handle your business model, follow the steps given below.
 1. Download and extract the plugin you have previously downloaded from GitHub and rename the folder as Snap.
 2. Make a directory structure as shown below.
+
 ![Magento folder structure](./../../asset/image/magento-folder-structure.png)
+
 3. Locate the root Magento directory of your shop via FTP connection.
 4. Copy the app folders into the Magento root folder.
-5. Run the following commands on terminal
-
-    `bin/magento module:enable Midtrans_Snap`
-
-    `bin/magento setup:upgrade`
-
-    `bin/magento cache:flush`
-
+5. Run the following commands on terminal.
+    * `bin/magento module:enable Midtrans_Snap`
+    * `bin/magento setup:upgrade`
+    * `bin/magento cache:flush`
 6. Login to your Magento administration panel.
-7. Proceed to [Plugins Configurations](#configuring-magento-2-plugin) section.
+7. Proceed to [Configuring Magento 2 Plugin](#configuring-magento-2-plugin) section.
 
 #### Configuring Magento 2 Plugin
-Before you begin, install and enabled Midtrans Snap plugin. 
+Before you begin, install and enable Midtrans Snap plugin.
 
 To configure the Midtrans plugin in your Magento administration panel, follow the steps given below.
 1. Login to your Magento administration panel.
 2. Go to **Stores(1)** > **Configuration(2)**.
-3. Go to **Sales(3)** -> **Payment Methods(4)**
+3. Go to **Sales(3)** > **Payment Methods(4)**
 ![Magento 2 step config 1](./../../asset/image/Magento2-7.png)
 
-4. In the **Midtrans - Accept Online Payment** section, click **Basic Settings** and fill out the following fields.
+
+4. In the **Midtrans - Accept Online Payment** section, click **Basic Settings** and fill out the fields given below.
 
 | Field                   | Description                                                  |
 | :---------------------- | :----------------------------------------------------------- |
@@ -262,16 +257,15 @@ To configure the Midtrans plugin in your Magento administration panel, follow th
 | Production \- ServerKey | Used as an API key to be used for authorization *Production* environments while calling Midtrans API from the backend. So keep it stored confidentially |
 | Enable Snap redirect    | Change to Snap redirect mode, the default value is No.      |
 
-
->Note: *Access Key* and *Server Key* are unique for every merchant. Always keep *Server Key* confidential.
+?>***Note***: *Access Key* and *Server Key* are unique for every merchant. Always keep *Server Key* confidential.
 
 #### Storing Log files
-The plugins will store log file in directory `/var/log/midtrans`. By default, the log files are enabled for request, notification and error log. Throw Exception log is disabled by default.
+The plugins will store log files in directory `/var/log/midtrans`. By default, the log files are enabled for request, notification and error log. Throw Exception log is disabled by default.
 ![magento_log_options](./../../asset/image/magento-log-options.png)
 
 
 #### Configuring Payment Integration
-To use Snap payment method, select any one of the following options in Midtrans Magento plugins.
+To use Snap payment method, select any one of the options given below.
 
 **Snap payment integration**
 
@@ -283,22 +277,20 @@ Enabling this feature will display additional payment options to the customer. F
 
 **Online Installment payment integration | Optional**
 
-Enabling this feature will display additional payment options to the customer, for *Online Installment* payment where the Card Issuer and Acquiring Bank is the same entity (e.g: BNI Card and BNI Acquiring bank).
+Enabling this feature will display additional payment options to the customer, for *Online Installment* payment where the *Card Issuer* and *Acquiring Bank* is the same entity. For example, if a customer makes an installment payment using BNI Card and the *Acquiring Bank* is also BNI.
 
 **Offline Installment payment integration | Optional**
 
-Enabling this feature will display additional payment options to customer, for *Offline Installment* where the Card Issuer and Acquiring Bank don't have to be same entity (e.g: BNI Card and Mandiri Acquiring Bank)
+Enabling this feature will display additional payment options to customer, for *Offline Installment* where the *Card Issuer* and *Acquiring Bank* don't have to be same entity. For example, if a customer makes an installment payment using BNI Card and the *Acquiring Bank* is Mandiri.
 
-?>***Note***: You can use different Midtrans Account for every Snap model payment method. To do so, you should configure the *Access Key* in Optional section `“Use different Midtrans account”`. If the optional *Access Key* is empty, the plugins will automatically use *Access Key* on Basic Settings.
-
-Currently, the built-in BCA KlikPay landing page will only use *Server Key* from basic settings of Snap payment integration
+?>***Note***: You can use different Midtrans Account for every Snap model payment method. To do so, configure the *Access Key* in Optional section `“Use different Midtrans account”`. If the optional *Access Key* is empty, the plugins will automatically use *Access Key* on Basic Settings.<br>Currently, the built-in BCA KlikPay landing page only use *Server Key* from basic settings of Snap payment integration.
 
 <details>
 <summary>
 
 #### Customize configuration
 </summary>
-To customize configuration these are configurable are described as given below.
+The table given below describes the fields to customize configurations.
 
 <article>
 
@@ -307,12 +299,12 @@ To customize configuration these are configurable are described as given below.
 | Enable                 | Payment snap section enable.  |
 | Title                  | The title for the payment method in the checkout page. |
 | Custom Expiry          | This field will allow you to set a custom duration on how long the transaction is available to be paid\. |
-| Allowed Payment Method | Customize allowed payment method, separate payment method code with a comma\. For example, bank\_transfer, credit\_card\. Leave it as default if you are not sure\.   |
-| Acquiring Bank         | You can specify which Acquiring Bank they prefer to use for a specific transaction\. The transaction fund will be routed to that specific acquiring bank\. Leave it blank if you are not sure\!      |
-| BIN Number             | It is a feature that allows the merchant to accept only Credit Cards within a specific set of BIN numbers\. Separate BIN number with comma. For example 4,5,4811,bni,mandiri\. Leave it blank if you are not sure|
+| Allowed Payment Method | Customize allowed payment method, separate payment method code with a comma\. For example, bank\_transfer, credit\_card\. Leave it as default if you are not sure\.  |
+| Acquiring Bank         | You can specify which Acquiring Bank they prefer to use for a specific transaction\. The transaction fund will be routed to that specific acquiring bank\. Leave it blank if you are not sure.     |
+| BIN Number             | It is a feature that allows the merchant to accept only Credit Cards within a specific set of BIN numbers\. Separate BIN number with comma. For example 4,5,4811,bni,mandiri\. Leave it blank if you are not sure. |
 | Installment Terms      | An arrangement for payment by installments\.     |
 | 3D Secure              | You must enable 3D Secure for secure card transactions\. Please contact us if you wish to disable this feature in the *Production* environment\.   |
-| Save Card              | This will allow your customer to save their card on the payment popup, for faster payment flow on future transactions  |
+| Save Card              | This will allow your customer to save their card on the payment popup, for faster payment flow on future transactions. |
 
 </article>
 </details>
@@ -329,10 +321,10 @@ To configure the Magento 2 Plugin Notification URL, follow the steps given below
 7. Enter **Unfinish Redirect URL**
 8. Click **Update**.
    A confirmation message is displayed.
-
+   Magento 2 Plugin Notification is configured.
    ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
 
-Magento 2 Plugin Notification is configured.
+
 The table given below shows the fields and the redirect URL.
 
 | Label | Field | Redirect URL|
@@ -342,24 +334,24 @@ The table given below shows the fields and the redirect URL.
 | 3 | Error Redirect URL | [your-site-url]/snap/index/finish |
 | 4 | Unfinish Redirect URL | [your-site-url]/snap/index/finish |
 
-?> ***Note***:Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
+?> ***Note***: Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
 
 <details>
 <summary>
 
 #### How to refund transaction online
 </summary>
-You can request refunds either from the [Midtrans Dashboard](https://dashboard.midtrans.com/transactions) or from the Magento administration. After a refund is issued, it cannot be cancelled or undone. So, before you trigger a refund request, make sure to check the refund amount and any other details. The online refund feature is available for GoPay and credit card payment methods.
+You can request refunds either from the Midtrans Dashboard or from the Magento administration. After a refund is issued, it cannot be cancelled or undone. So, before you trigger a refund request, make sure to check the refund amount and any other details. The online refund feature is available for GoPay and credit card payment methods.
 
 If you make refund from the Midtrans *Dashboard*, Refund notification is sent to Magento, transaction state is set to *CLOSED* and credit memo is not created.
 <article>
 
-#### Request refund from Magento Admin
-1. Log in to your Magento admin panel.
+#### Request refund from Magento administration
+1. Log in to your Magento administration panel.
 2. In the menu, go to **Sales** > **Orders**. The order overview page is displayed.
 3. Click the specific **order** you want to refund.
 4. Click **Invoices** tab on **Order list View** navigation sidebar.
-5. Go to **Invoice List Page** > **Order**, click **View** button on invoice you need to request online refund.
+5. Go to **Invoice List Page** > **Order**, click **View** on invoice you need to request online refund.
 6. Click **Credit Memo** on the top-right corner of the page.
 7. In the **New Memo for Invoice** page, scroll down to the **Refund Totals** section.
 8. In this section, you can request for refund online or offline.
@@ -405,16 +397,17 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 ### PrestaShop
 <hr>
-Midtrans ❤️ PrestaShop! Integrate your PrestaShop store with Midtrans Snap payment gateway. Midtrans tries to make payments simple for you and the customers. This plugin will allow online payment on your PrestaShop store using various online payment channels.
+Midtrans ❤️ PrestaShop! Integrate your PrestaShop store with Midtrans Snap payment gateway. Midtrans strives to make payments simple for you and the customers. This plugin will allow online payment on your PrestaShop store using various online payment channels.
+
 
 #### Requirements
 Some of the requirements to continue with the integration process, are listed below.
 * PrestaShop 1.6 and 1.7 or later
 * PHP version 5.4 or later
 * MySQL version 5.0 or later
-* Midtrans plugin for PrestaShop [ [Github](https://github.com/veritrans/SNAP-Prestashop) | [Zip](https://github.com/veritrans/SNAP-Prestashop/archive/master.zip) ].
+* Midtrans plugin for PrestaShop [[Github](https://github.com/veritrans/SNAP-Prestashop)|[Zip](https://github.com/veritrans/SNAP-Prestashop/archive/master.zip)].
 
-#### Installation Process
+#### Installing PrestaShop Plugin
 To install the plugin, follow the steps given below.
 1. Extract the plugin you have previously downloaded and rename folder as **midtranspay**. Then Zip the folder back into **midtranspay.zip**.
 2. Go to **IMPROVE > Modules > Modules Manager** on PrestaShop administration page.
@@ -422,17 +415,18 @@ To install the plugin, follow the steps given below.
 4. Locate the **midtranspay.zip** file, click **Open**.
 5. Click **Configure**.
 6. Find the **Midtrans Pay** module in the module manager and click configure.
-7.  Enter **Payment Option Display Text** with text button that you want to display to the customer.
+7.  Enter **Payment Option Display Text**. This text appears on the button displayed to the customer.
 8. Select from **Environment** drop-down list. *Development* for testing transaction, *Production* for real transaction.
 9. Enter **Merchant ID**.
 10. Enter **Client key.**
 11. Enter **Server key**.
-12. **Map payment SUCCESS status to:** select your desired order status when payment is success.
-13. **Map payment FAILURE status to:** select your desired order status when payment is failure.
-14. **Map payment PENDING/CHALLENGE status to:** select your desired order status when payment is challenged.
-    Other configuration are optional, you may leave it as is.
+12. **Map payment SUCCESS status to:** Select your desired order status when payment is success.
+13. **Map payment FAILURE status to:** Select your desired order status when payment is failure.
+14. **Map payment PENDING/CHALLENGE status to:** Select your desired order status when payment is challenged.
+    Other configurations are optional, you may leave it as is.
 
 ![Prestashop install midtrans](./../../asset/image/Prestashop-install.gif)
+
 
 #### Configuring PrestaShop Plugin Notification
 To configure the PrestaShop Plugin Notification URL, follow the steps given below.
@@ -446,10 +440,9 @@ To configure the PrestaShop Plugin Notification URL, follow the steps given belo
 7. Enter **Unfinish Redirect URL**
 8. Click **Update**.
    A confirmation message is displayed.
-
-   ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
-
 PrestaShop Plugin Notification is configured.
+
+![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
 
 The table given below shows the fields and the redirect URL.
 
@@ -460,7 +453,7 @@ The table given below shows the fields and the redirect URL.
 | Error Redirect URL       | [your-site-url]/index.php?fc=module&module=midtranspay&controller=failure |
 | Unfinish Redirect URL    | [your-site-url]/index.php?fc=module&module=midtranspay&controller=success |
 
-?>***Note:*** Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
+?>***Note***: Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
 
 <details>
 <summary>
@@ -514,35 +507,36 @@ To install OpenCart plugin, follow the steps given below.
     * [OpenCart v2.0, v2.1, v2.2](https://github.com/veritrans/SNAP-Opencart)
 2. Locate the root OpenCart directory of your shop through FTP connection.
 3. Copy the `admin`, `catalog`, and `system` folders into your OpenCart root folder, and merge it.
-4. On your OpenCart admininistration page, go to **Extensions** > **Extensions**.
+4. On your OpenCart administration page, go to **Extensions** > **Extensions**.
 5. Select **Payment** Filter.
 6. Select **Midtrans**.
-7. Click **Install** button.
+7. Click **Install**.
 OpenCart plugin is installed.
 
 #### Configuringing Merchant Details
-1. On your OpenCart administration page, go to **Extensions** -> **Extensions**.
+1. On your OpenCart administration page, go to **Extensions** > **Extensions**.
 2. Select **Payment** Filter.
 3. Select **Midtrans**.
-4. Click **Edit** button.
+4. Click **Edit**.
  *Configure Midtrans* page is displayed.
-5. Select **Enable** Status drop-down list.
-6. Enter **Display name** with text button that you want to display to customer.
+5. Select **Enable** from Status drop-down list.
+6. Enter **Display name**. This text is displayed on button displayed to the customer.
 7. Enter **Merchant ID** with your Merchant ID on [Midtrans account](https://dashboard.midtrans.com/settings/config_info/).
 8. Select **Environment** dropdown list; *Sandbox* is for testing transaction, *Production* is for real transaction.
 9. Enter **Client Key**.
 10. Enter **Server Key**.
 
-?> ***Note***: *Client Key* and *Server Key* for *Sandbox* environment and *Production* environment are different. For more details, refer to [Retrieve API Keys](/en/midtrans-account/overview.md#retrieving-api-access-keys)
+?> ***Note***: *Client Key* and *Server Key* for *Sandbox* environment and *Production* environment are different. For more details, refer to [Retrieve API  Access Keys](/en/midtrans-account/overview.md#retrieving-api-access-keys)
 
 11. Select **SUCCESS Order Status** drop-down list to select your desired order status when payment is successful. (recommended: `Processing`).
 12. Select **PENDING Order Status** drop-down list to select your desired order status when payment is failure (recommended: `Pending`).
 13. Select **FAILURE Order Status** drop-down list to select your desired order status when payment is pending (recommended: `Canceled`).
-Other configuration are optional, you can leave it as default.
+Other fields are optional, you can leave it as default.
 
 ![Opencart Install](./../../asset/image/Opencart-install.gif)
 
-#### Configuring OpenCart Plugin Notifications 
+
+#### Configuring OpenCart Plugin Notifications
 To configure the PrestaShop Plugin Notification URL, follow the steps given below.
 1. Login to your MAP account.
 2. Select the **Environment** from drop-down list.
@@ -554,10 +548,10 @@ To configure the PrestaShop Plugin Notification URL, follow the steps given belo
 7. Enter **Error Redirect URL**.
 8. Click **Update**.
    A confirmation message is displayed.
+   OpenCart Plugin Notification is configured.
 
-   ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
+![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
 
-OpenCart Plugin Notification is configured.
 The table given below shows the fields and the redirect URL.
 
 <!-- tabs:start -->
@@ -589,7 +583,7 @@ The table given below shows the fields and the redirect URL.
 </summary>
 
 <article>
-1. Perform successful transaction on your online store by entering the card details given below
+1. Perform successful transaction on your online store by entering the card details given below.
 
 | Name        | Value               |
 | :---------- | :------------------ |
@@ -625,13 +619,13 @@ Some of the requirements to continue with the integration process, are listed be
    * WHMCS v5.3.12 - v7.x or later (Tested up to WHMCS v7.6 - running well)
    * PHP version 5.4 or later
    * MySQL version 5.0 or later
-   * Midtrans plugin for WHMCS [ [Github](https://github.com/veritrans/SNAP-whmcs) | [Zip](https://github.com/veritrans/SNAP-whmcs/archive/master.zip) ]
+   * Midtrans plugin for WHMCS [[Github](https://github.com/veritrans/SNAP-whmcs)|[Zip](https://github.com/veritrans/SNAP-whmcs/archive/master.zip)]
 
 #### Installating of WHMCS plugin
 To install WHMCS plugin, follow the steps given below.
 1. Download the modules from the link above.
 2. Extract **Whmcs-master.zip** file you have previously downloaded.
-3. Upload and merged module folder that you have extracted into your WHMCS directory, **Installation and Configuration**
+3. Upload and merge module folder that you have extracted into your WHMCS directory, **Installation and Configuration**
 4. Access your WHMCS administration page.
 5. Go to **Setup** > **Payments** >**Payment Gateways**.
 6. Click **Midtrans** payment method.
@@ -639,7 +633,7 @@ You will be redirected to configuration page.
 7. Enter **Display Name**.
 8. Enter **Midtans Client Key**.
 9. Enter **Midtrans Server Key**.
-10. For *Production* environment, select **Production Mode** check-box.
+10. For *Production* environment, select **Production Mode** check box.
 11. Click **Save Changes**.
  The WHMCS plugin are installed successfully.
 
@@ -657,9 +651,10 @@ To configure the WHMCS Plugin Notification URL, follow the steps given below.
 7. Enter **Error Redirect URL**.
 8. Click **Update**.
    A confirmation message is displayed.
+   WHMCS Plugin Notification is configured.
 
-   ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
-WHMCS Plugin Notification is configured.
+![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
+
 The table given below shows the fields and the redirect URL.
 
 | Label | URL Role | Redirect URL|
@@ -679,7 +674,7 @@ The table given below shows the fields and the redirect URL.
 </summary>
 
 <article>
-1. Perform successful transaction on your online store by entering the following card details given below
+1. Perform successful transaction on your online store by entering the card details given below.
 
 | Name        | Value               |
 | :---------- | :------------------ |
@@ -718,31 +713,37 @@ Some of the requirements to continue with the integration process, are listed be
 #### Installing Drupal 8 Plugin
 To install Drupal 8 plugin, follow the steps given below.
 1. Download the plugin file and unzip it, rename folder to **commerce_midtrans**.
-2. Using an FTP client, or your hosting control panel, upload the unzipped plugin folder to your Drupal modules installation's **[Drupal folder]/modules/contrib/** directory.
-3. Open drupal admin page, click **Extend**.
-4. Select **Commerce Midtrans** check-box under **COMMERCE (CONTRIB)** group.
+2. Using a FTP client, or your hosting control panel, upload the unzipped plugin folder to your Drupal modules installation's **[Drupal folder]/modules/contrib/** directory.
+3. Open drupal administration page, click **Extend**.
+4. Select **Commerce Midtrans** check box under **COMMERCE (CONTRIB)** group.
     ![Drupal 8 1](./../../asset/image/drupal8_1.png)
+
+
 5. Click **Install**.
 Drupal 8 plugin is installed.
 
 #### Configuring Drupal 8 Plugin
 1. Go to **Commerce** > **Configuration** > **Payment** > **Payment gateways**.
- ![Drupal 8 2](./../../asset/image/drupal8_2.png)
 
-2. Click **Add payment gateway** button.
-     ![Drupal 8 3](./../../asset/image/drupal8_3.png)
+![Drupal 8 2](./../../asset/image/drupal8_2.png)
+
+2. Click **Add payment gateway**.
+
+![Drupal 8 3](./../../asset/image/drupal8_3.png)
+
 3. Click **Midtrans** under Actions.
-4. Enter **Name** with text button that you want to display to customer.
+4. Enter **Name**. This text appears on the button displayed to the customer.
 5. Select **Plugins** radio button.
 6. Select **Mode**; *Sandbox* for testing transaction and *Production* for real transaction.
 7. Enter **Merchant ID**.
 8. Enter **Server key**.
-9. Enter **Client key.**
+9. Enter **Client key**.
 
- ?>***Note***: You may get *Merchant ID, Server key,* and *Client key* on Midtrans MAP Dashboard.<br>Other configuration are optional, you may leave it as is.
-10. Click Save.
+ ?>***Note***: You may get *Merchant ID, Server key,* and *Client key* on Midtrans MAP Dashboard.<br>Other fields are optional, you may leave it as is.
+10. Click **Save**.
 A confirmation message is displayed.
 Drupal 8 plugin is configured.
+
 ![Drupal 8 4](./../../asset/image/drupal8_4.png)
 
 #### Configuring Drupal Notifications
@@ -757,8 +758,11 @@ To configure the Drupal Plugin Notification URL, follow the steps given below.
 7. Enter **Error Redirect URL**.
 8. Click **Update**.
    A confirmation message is displayed.
-   ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
- Drupal Plugin Notification is configured.
+
+Drupal Plugin Notification is configured.
+![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
+
+
 The table given below shows the fields and the redirect URL.
 
 | Label | URL Role                 | Redirect URL                            |
@@ -768,7 +772,7 @@ The table given below shows the fields and the redirect URL.
 | 3     | Unfinish Redirect URL    | [your-site-url]                         |
 | 4     | Error Redirect URL       | [your-site-url]                         |
 
-?>?***Note***: Enter **http://** or **https://** in *Notification URL* and *Redirect URL*, according to your web-server configuration.<br>Open your website URL in a browser, and check the URL is **http** or **https** on the address bar.
+?>***Note***: Enter **http://** or **https://** in *Notification URL* and *Redirect URL*, according to your web-server configuration.<br>Open your website URL in a browser, and check the URL is **http** or **https** on the address bar.
 
 <details>
 <summary>
@@ -776,7 +780,7 @@ The table given below shows the fields and the redirect URL.
 #### Transaction Test
 </summary>
 <article>
-1. Perform successful transaction on your online store by entering the card details given below
+1. Perform successful transaction on your online store by entering the card details given below.
 
 | Name        | Value               |
 | :---------- | :------------------ |
@@ -806,7 +810,7 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 ### WordPress - Easy Digital Download
 <hr>
 
-Midtrans ❤️ EDD! Integrate your Easy Digital Download (EDD) store with Midtrans Snap payment gateway. Midtrans makes payments simple for both the merchant and the customers. This plugin will allow online payments on your EDD store using various online payment channel.
+Midtrans ❤️ EDD! Integrate your Easy Digital Download (EDD) store with Midtrans Snap payment gateway. Midtrans strives to make payments simple for both the merchant and the customers. This plugin will allow online payments on your EDD store using various online payment channels.
 
 Midtrans EDD plugins also available on [WordPress plugins store](https://wordpress.org/plugins/edd-midtrans-gateway/).
 
@@ -819,7 +823,7 @@ Some of the requirements to continue with the integration process, are listed be
    * PHP CURL enabled server/host
 
 #### Installing WordPress EDD plugin
-To install WordPress EDD plugins, select any **one** of the following installation methods given below.
+To install WordPress EDD plugins, select any **one** of the installation methods given below.
 
 **Simple Installation**
 
@@ -829,9 +833,9 @@ To install WordPress EDD Pugins follow the steps given below.
 3. Enter **Midtrans-Easy-Digital-Downloads** in the search bar.
 4. Click **Install Now**.
 5. Click **Activate**.
+ Proceed to configuration section.
 
-   Proceed to configuration section.
-   ![EDD Install](./../../asset/image/Edd-Install.gif)
+![EDD Install](./../../asset/image/Edd-Install.gif)
 
 **Manual Installation**
 
@@ -839,14 +843,27 @@ The manual installation method involves downloading feature-rich plugins and upl
 1. Download the plugin file to your computer and unzip it.
 2. Extract the plugin, then rename the folder modules as **edd-midtrans-gateway**
 3. Using an FTP program, or your hosting control panel, upload the unzipped plugin folder to your WordPress installation wp-content/plugins/ directory.
-4. Install and Activate the plugin from the Plugins menu within the WordPress admin panel.
-5. Activate Easy Digital Downloads - Midtrans Gateway plugin from Plugin menu in your WordPress admin page.
+4. Install and Activate the plugin from the Plugins menu within the WordPress administration panel.
+5. Activate Easy Digital Downloads - Midtrans Gateway plugin from Plugin menu in your WordPress administration page.
 
-#### Easy Digital Download Plugin Configuration
-<!-- TODO: add step by step text guide -->
+#### Configuring EDD Plugin
+To configure EDD plugin, follow the steps given below.
+1. On Dashboard, go to **Downloads(1) > Settings(2) > Payment Gateways(3)**.
+2. For Sandbox environment, select **Test mode** checkbox.
+3. Select Midtrans in **Payment Gateway(4)** check box.
+4. **Default Gateway(5)** is selected by default.
+5. Click **Save Changes(6)**.
+
 ![Edd Config 1](./../../asset/image/EDD-Config-1.png)
 
+6. select **Midtrans(7)** in General.
+7. Enter **Merchant ID**.
+8. For *Production* Environment, enter **Production Server Key** and **Production Client Key**.
+9. For *Sandbox* Environment, enter **Sandbox Server Key** and **Sandbox Client Key**.
+10. Click **Save Changes**.
+
 ![Edd Config 2](./../../asset/image/EDD-Config-2.png)
+
 
 #### Configuring EDD Notifications
 To configure the EDD Plugin Notification URL, follow the steps given below.
@@ -860,8 +877,10 @@ To configure the EDD Plugin Notification URL, follow the steps given below.
 7. Enter **Error Redirect URL**.
 8. Click **Update**.
    A confirmation message is displayed.
+   EDD Plugin Notification is configured.
+
 ![Snap API](./../../asset/image/snap-api-notification-configuration-1.png)
- EDD Plugin Notification is configured.
+
 The table given below shows the fields and the redirect URL.
 
 | Label | URL Role                 | Redirect URL                           |
