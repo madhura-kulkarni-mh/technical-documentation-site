@@ -123,7 +123,7 @@ To configure WooCommerce plugin, follow the steps given below.
 
 
 ### Configuring WooCommerce Plugin Notification
-To configure the WooCommerce plugin notification URL, follow the steps given below.
+To configure the WooCommerce plugin Notification URL, follow the steps given below.
 1. Login to your MAP account.
 2. Select the **Environment** from drop-down list.
 3. On the Home page, go to **SETTINGS > CONFIGURATION**.
@@ -172,9 +172,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 Check Point| Error |Troubleshooting
 --- | --- | ---
-Order status in CMS backend| Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible.
-Merchant email notification| Notification not received. | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications).
-Customer email notification| Notification not received. | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications).
+Order status in CMS backend| Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br/> Check if your CMS or the notification URL is publicly accessible. 
+Merchant email notification| Notification not received. | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). 
+Customer email notification| Notification not received. | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). 
 
 ### Payment Example
 ![WooCommerce Payment Test](./../../asset/image/woo-pay-show.gif)
@@ -309,7 +309,7 @@ The table given below describes the fields to customize configurations.
 </details>
 
 ### Configuring Magento 2 Plugin Notification
-To configure the Magento 2 plugin notification URL, follow the steps given below.
+To configure the Magento 2 plugin Notification URL, follow the steps given below.
 1. Login to your MAP account.
 
 2. Select the **Environment** from drop-down list.
@@ -317,22 +317,21 @@ To configure the Magento 2 plugin notification URL, follow the steps given below
 3. On the Home page, go to **SETTINGS > CONFIGURATION**.
    *Configuration* page is displayed.
    
-   ​	* Enter **Payment Notification URL**.
+   	* Enter **Payment Notification URL**.
+   	*  Enter **Finish Redirect URL**.
    
-   ​	* Enter **Finish Redirect URL**.
+   	*  Enter **Error Redirect URL**.
+   	*  Enter **Unfinish Redirect URL**.
+   *  Click **Update**.
    
-   ​	* Enter **Error Redirect URL**.
    
-   	*  Enter **Unfinish Redirect URL**
-   	*  Click **Update**.
    
 4. On the Home page, go to **SETTINGS > SNAP PREFERENCES > System settings**.
 
-   ​	* Enter **Finish Redirect URL**.
-
-   ​	* Enter **Error Redirect URL**.
-
-    * Enter **Unfinish Redirect URL**.
+   * Enter **Finish Redirect URL**.
+* Enter **Error Redirect URL**.
+   
+ * Enter **Unfinish Redirect URL**.
    
     * Click **Save**.
    
@@ -350,7 +349,7 @@ The table given below shows the fields and the redirect URL.
 
 
 
-?> ***Note***: Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
+?> ***Note***: Please make sure to enter **http://** or **https://** in *Notification URL* and *Redirect URL*, according to your web-server configuration.<br>If you are not sure, open your web URL in a browser, and check the URL is **http** or **https** on the address bar.
 
 <details>
 <summary>
@@ -359,7 +358,7 @@ The table given below shows the fields and the redirect URL.
 </summary>
 You can request refunds either from the Midtrans Dashboard or from the Magento administration. After a refund is issued, it cannot be cancelled or undone. So, before you trigger a refund request, make sure to check the refund amount and any other details. The online refund feature is available for GoPay and credit card payment methods.
 
-If you make refund from the Midtrans *Dashboard*, Refund notification is sent to Magento, transaction state is set to *CLOSED* and credit memo is not created.
+If you make refund from the Midtrans *Dashboard*, refund notification is sent to Magento, transaction state is set to *CLOSED* and credit memo is not created.
 <article>
 
 
@@ -404,9 +403,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.               | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br> Check if your CMS or the Notification URL is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 ### Payment Example
 ![Magento 2 Payment Test](./../../asset/image/mag2-pay-show.gif)
@@ -492,9 +491,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br> Check if your CMS or the *Notification URL* is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 ### Payment Example
 ![Prestashop Payment Test](./../../asset/image/presta-pay-show.gif)
@@ -529,8 +528,8 @@ OpenCart plugin is installed.
 
 8. To configure merchant details, follow the steps given below.
     * Click **Edit**.
-	 Configure Midtrans* page is displayed.
-    * Click **Enable** in **Status**list 
+	 *Configure Midtrans* page is displayed.
+    * Click **Enable** in **Status** list 
     * Enter **Display name**. This text is displayed on button displayed to the customer.
     * Enter **Merchant ID** with your Merchant ID on [Midtrans account](https://dashboard.midtrans.com/settings/config_info/).
     * Select **Environment** dropdown list; *Sandbox* is for testing transaction, *Production* is for real transaction.
@@ -591,7 +590,7 @@ The table given below shows the fields and the redirect URL.
 
 <!-- tabs:end -->
 
-?>***Note***: Please make sure to enter **http://** or **https://** in Notification URL and Redirect URL fields, according to your web-server configuration.<br>If you are not sure, open your website URL in a browser, and check the URL is **http** or **https** on the address bar.
+?>***Note***: Please make sure to enter **http://** or **https://** in *Notification URL* and *Redirect URL* fields, according to your web-server configuration.<br>If you are not sure, open your website URL in a browser, and check the URL is **http** or **https** on the address bar.
 
 <details>
 <summary>
@@ -615,9 +614,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br>Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br/> Check if your CMS or the notification URL is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 ### Payment Example
 
@@ -703,9 +702,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br/> Check if your CMS or the notification URL is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 </article>
 </details>
@@ -810,9 +809,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br> Check if your CMS or the notification URL is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 ### Payment Example
 ![Drupal Payment Test](./../../asset/image/drupal8-pay-show.gif)
@@ -882,7 +881,7 @@ Midtrans payment setting is configured.
 ![Edd Config 2](./../../asset/image/EDD-Config-2.png)
 
 ### Configuring EDD Notifications
-To configure the EDD plugin Notification URL, follow the steps given below.
+To configure the EDD plugin notification URL, follow the steps given below.
 1. Login to your MAP account.
 2. Select the **Environment** from drop-down list.
 3. On the Home page, go to **SETTINGS > CONFIGURATION**.
@@ -930,9 +929,9 @@ For more details, refer to [Testing Payments on Sandbox](/en/technical-reference
 
 | Check Point                 | Error                                     | Troubleshooting                                              |
 | --------------------------- | ----------------------------------------- | ------------------------------------------------------------ |
-| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint/Payment Notification URL setting on MAP.<br> Check if your CMS/Notification URL is publicly accessible. |
-| Merchant email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
-| Customer email notification | Notification not received.                | Check Email Notifications settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Order status in CMS backend | Order status not recorded in the backend. | Check endpoint or the *Payment Notification URL* setting on MAP.<br/> Check if your CMS or the notification URL is publicly accessible. |
+| Merchant email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
+| Customer email notification | Notification not received.                | Check *Email Notifications* settings on MAP. For more details, refer to [Configuring Email Notifications](/en/after-payment/dashboard-usage.md#configuring-email-notifications). |
 
 ### Payment Example
 ![EDD Payment Test](./../../asset/image/edd-show-pay.gif)
