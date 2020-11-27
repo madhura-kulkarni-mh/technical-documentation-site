@@ -2,7 +2,6 @@
 <hr>
 
 
-
 Content Management System (CMS) allows you to easily have a website/web store without building from scratch. CMS does not require programming knowledge. You just need to install the CMS and customize according to your requirement. You only require to manage the content (Content Management). Some of the examples of CMS are WordPress, Magento 2, PrestaShop, WHMCS, and so on.
 
 
@@ -422,19 +421,12 @@ To install and configure the Midtrans-PrestaShop plugin, follow the steps given 
 6. Click **Configure**.
 7. Find the **Midtrans Pay** module in the module manager and click **Configure**. Configure *Midtrans Pay* page is displayed. Follow the steps given below.
     * Enter **Payment Option Display Text**. This text appears on the button displayed to the customer.
-
     * In the **Environment** list, click the appropriate environment. *Development* for testing transaction, *Production* for real transaction.
-
     * Enter **Merchant ID**.
-
     * Enter **Client key.**
-
     * Enter **Server key**.
-
     * Select desired order status for successful payments, from **Map payment SUCCESS status to** list.
-
     * Select desired order status for payment failure, from **Map payment FAILURE status to** list.
-
     * Select desired order status for challenge payment, from **Map payment PENDING/CHALLENGE status to** list.
 
      ?>***Note***: Other fields are optional. You may leave it as is.
@@ -531,7 +523,6 @@ OpenCart plugin is installed successfully.
     * Select **Environment** dropdown list; *Sandbox* is for testing transaction, *Production* is for real transaction.
     * Enter **Client Key**.
     * Enter **Server Key**.
-
     * In **SUCCESS Order Status** list, select your desired order status for a successful payment (recommended: `Processing`).
     * In **PENDING Order Status** list, select your desired order status for a payment failure (recommended: `Pending`).
     * In **FAILURE Order Status** list, select your desired order status for a pending payment (recommended: `Canceled`).
