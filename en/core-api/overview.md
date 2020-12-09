@@ -42,3 +42,4 @@ Choose any of one integration method below that is suitable to your liking:
 - [Python](https://github.com/Midtrans/midtrans-python-client/tree/master/examples)
 
 <sub><sup>[*Other languanges*](/en/technical-reference/library-plugin.md#language-library)</sup></sub>
+
